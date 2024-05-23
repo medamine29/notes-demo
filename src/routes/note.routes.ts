@@ -30,7 +30,7 @@ router.get(
 )
 
 router.get(
-  '/:noteId',
+  '/:noteId/details',
   validate(getNoteByIdSchema),
   catchMiddleware(getNoteById)
 )
